@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { WbNavbarComponent } from './components/wb-navbar/wb-navbar.component';
 import { WbHomeComponent } from './views/wb-home/wb-home.component';
+import { WbLoginComponent } from './components/wb-login/wb-login.component';
 
 
 
@@ -174,7 +175,8 @@ const desktopRoutes: Routes = [
     // WbRedeemWalletComponent
 
    WbHomeComponent,
-    WbNavbarComponent
+    WbNavbarComponent,
+    WbLoginComponent
   ],
   entryComponents: []
 })

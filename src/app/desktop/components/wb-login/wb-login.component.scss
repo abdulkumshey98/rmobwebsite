@@ -1,0 +1,54 @@
+@import '_mixins.scss';
+
+.login-modal {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white !important;
+  width: 36vw;
+  padding: 20px !important;
+  border-radius: 8px;
+}
+
+
+.close-btn {
+  color: white !important;
+  // background: $light-base !important;
+  margin-bottom: 1% !important;
+  padding: 7px 10px !important;
+  border-radius: 90px !important;
+  background-color: $base-color;
+  width: 45px;
+  height: 45px;
+  border: 3px solid white !important;
+}
+
+
+.login-img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+
+
+
+.login-heading {
+  color: black !important;
+  text-align: center !important;
+  font-size: 14pt !important;
+  font-weight: 500 !important;
+}
+
+
+.form-div {
+  padding: 40px !important;
+  padding-top: 0px !important;
+}
+
+
+.login-input {
+  background-color: white !important;
+  color: black !important;
+  height: 48px !important;
+  border: 1px solid gray !important;
+}
