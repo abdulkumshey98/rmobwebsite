@@ -14,22 +14,32 @@
       <form class="uk-grid-small"
             uk-grid>
         <div class="uk-width-1-1">
-          <input class="uk-input login-input"
-                 type="text"
-                 placeholder="+91"
-                 aria-label="100">
+          <label class="uk-form-label login-label"
+                 for="form-stacked-text">Enter your mobile number</label>
+
+          <div class=" uk-child-width-1-1">
+            <div class="uk-inline">
+              <a class="uk-form-icon login-numb"
+                 href="#">+91</a>
+              <input class="uk-input uk-width-1-1 login-input"
+                     type="number"
+                     ngModel
+                     maxlength="25"
+                     aria-label="Clickable icon">
+            </div>
+          </div>
         </div>
-        <div class="uk-width-1-2@s">
-          <input class="uk-input"
-                 type="text"
-                 placeholder="50"
-                 aria-label="50">
+        <div class="uk-width-1-1@s">
+          <label class="login-check"><input class="uk-checkbox"
+                   type="checkbox"
+                   checked> I agree to the <a href="http://"
+               target="_blank"
+               rel="noopener noreferrer">
+              Terms and Conditions</a> </label>
         </div>
-        <div class="uk-width-1-4@s">
-          <input class="uk-input"
-                 type="text"
-                 placeholder="25"
-                 aria-label="25">
+        <div class="uk-width-1-1@s">
+          <button class="uk-button uk-width-1-1 login-submit"
+                  type="submit">continue</button>
         </div>
       </form>
     </div>

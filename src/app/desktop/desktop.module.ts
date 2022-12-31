@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WbNavbarComponent } from './components/wb-navbar/wb-navbar.component';
 import { WbHomeComponent } from './views/wb-home/wb-home.component';
 import { WbLoginComponent } from './components/wb-login/wb-login.component';
+import { WbOtpComponent } from './components/wb-otp/wb-otp.component';
 
 
 
@@ -176,7 +177,8 @@ const desktopRoutes: Routes = [
 
    WbHomeComponent,
     WbNavbarComponent,
-    WbLoginComponent
+    WbLoginComponent,
+    WbOtpComponent
   ],
   entryComponents: []
 })
