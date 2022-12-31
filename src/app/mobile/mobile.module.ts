@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MbHomeComponent } from './components/mb-home/mb-home.component';
+import { NgOtpInputModule } from  'ng-otp-input';
 
 
 const categoryRoutes = (component: any) => {

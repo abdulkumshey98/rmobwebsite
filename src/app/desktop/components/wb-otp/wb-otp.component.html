@@ -1,1 +1,37 @@
-<p>wb-otp works!</p>
+<!-- This is the modal -->
+<div id="otp-modal"
+     uk-modal>
+  <div class="uk-modal-dialog uk-modal-body login-modal uk-margin-auto-vertical">
+    <button class="uk-modal-close-default close-btn "
+            type="button"
+            uk-close></button>
+    <p class="resend-heading">Enter OTP
+    </p>
+    <p class="resend-subheading">We’ve sent an OTP on your registered number.</p>
+    <p class="resend-phone">+9900141870 <a href="">Edit <span class="material-icons-outlined">
+          mode_edit
+        </span></a>
+    </p>
+    <div class=" uk-child-width-1-1">
+      <div class="uk-inline">
+        <a class="uk-form-icon login-numb"
+           href="#">+91</a>
+        <input class="uk-input uk-width-1-1 login-input"
+               type="number"
+               ngModel
+               maxlength="25"
+               aria-label="Clickable icon">
+      </div>
+    </div>
+    <p class="retry">Retry in <span>1:00</span></p>
+    <!-- <ng-otp-input #ngOtpInput
+                  (onInputChange)="onOtpChange($event)"
+                  *ngIf="showOtpComponent"
+                  [config]="config"></ng-otp-input> -->
+
+    <button class="uk-button uk-width-1-1 login-submit"
+            type="submit">Submit</button>
+
+  </div>
+
+</div>

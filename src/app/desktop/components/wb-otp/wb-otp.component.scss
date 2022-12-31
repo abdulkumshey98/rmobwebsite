@@ -1,0 +1,89 @@
+@import '_mixins.scss';
+
+.login-modal {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white !important;
+  width: 28vw;
+  padding: 20px !important;
+  border-radius: 8px;
+}
+
+.close-btn {
+  color: white !important;
+  // background: $light-base !important;
+  margin-bottom: 1% !important;
+  padding: 7px 10px !important;
+  border-radius: 90px !important;
+  background-color: #e63b3b;
+  width: 35px;
+  height: 35px;
+  border: 3px solid white !important;
+}
+
+.close-btn:hover {
+  background: white !important;
+  color: #e63b3b !important;
+}
+
+.resend-heading {
+  color: $dark-bg;
+  font-weight: 700;
+  font-size: 14pt !important;
+  margin-bottom: 0px !important;
+}
+
+.resend-subheading {
+  font-size: 11pt !important;
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+  color: black !important;
+}
+
+.resend-phone {
+  color: black !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+
+.resend-phone>a {
+  font-size: 10pt !important;
+  color: $base-color;
+  margin-left: 20px !important;
+  text-decoration: none !important;
+
+}
+
+.resend-phone>a>span {
+  vertical-align: middle !important;
+  font-size: 12pt !important;
+}
+
+
+.login-submit {
+  background-color: $dark-bg;
+  color: white !important;
+  padding: 4px !important;
+  font-size: 12pt !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+}
+
+
+.login-input::-webkit-outer-spin-button,
+.login-input::-webkit-inner-spin-button {
+  display: none !important;
+}
+
+
+.login-submit:hover {
+  background-color: $base-color;
+}
+
+
+.retry {
+  color: gray !important;
+  font-size: 10pt !important;
+  margin-top: 4px !important;
+  font-size: 10pt !important;
+}
