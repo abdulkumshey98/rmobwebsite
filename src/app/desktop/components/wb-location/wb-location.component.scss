@@ -1,0 +1,22 @@
+@import '_mixins.scss';
+
+.current-location {
+  background: none;
+  color: $base-color !important;
+  text-transform: capitalize !important;
+  border-radius: 8px !important;
+  border: 1px solid $dark-bg;
+  color: black !important;
+}
+
+
+.cl-icon {
+  width: 20px !important;
+}
+
+.lo-more {
+  color: $dark-bg;
+  font-size: 10pt !important;
+  font-weight: 500 !important;
+  margin-bottom: 0px !important;
+}
