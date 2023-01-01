@@ -1,3 +1,6 @@
+@import '_mixins.scss';
+
+
 .topnav {
   padding: 0px 80px !important;
   margin-bottom: 0px !important;
@@ -44,4 +47,54 @@
   padding: 20px !important;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
   border-radius: 8px !important;
+}
+
+
+.profile-drop {
+  padding: 20px !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  border-radius: 8px !important;
+}
+
+
+.profile-ul {
+  background-color: $dark-bg;
+}
+
+
+.profile-nav>li>a {
+  color: $dark-bg;
+
+}
+
+.profile-nav>li>a>span {
+  vertical-align: middle !important;
+  font-size: 13pt !important;
+  margin-right: 8px !important;
+}
+
+
+.profile-nav>li:hover>a {
+  color: $base-color;
+}
+
+
+.logout-btn {
+  background-color: #c30f0f;
+  margin-top: 10px !important;
+  color: white !important;
+  border: 1px solid #c30f0f !important;
+  border-radius: 90px !important;
+}
+
+.logout-btn>span {
+  vertical-align: middle !important;
+  font-size: 10pt !important;
+}
+
+
+
+.logout-btn:hover {
+  background: none !important;
+  color: #c30f0f !important;
 }

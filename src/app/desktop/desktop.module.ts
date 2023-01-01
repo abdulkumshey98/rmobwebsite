@@ -6,6 +6,7 @@ import { WbHomeComponent } from './views/wb-home/wb-home.component';
 import { WbLoginComponent } from './components/wb-login/wb-login.component';
 import { WbOtpComponent } from './components/wb-otp/wb-otp.component';
 import { WbLocationComponent } from './components/wb-location/wb-location.component';
+import { WbLogoutComponent } from './components/wb-logout/wb-logout.component';
 
 
 
@@ -180,7 +181,8 @@ const desktopRoutes: Routes = [
     WbNavbarComponent,
     WbLoginComponent,
     WbOtpComponent,
-    WbLocationComponent
+    WbLocationComponent,
+    WbLogoutComponent
   ],
   entryComponents: []
 })

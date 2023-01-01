@@ -1,0 +1,50 @@
+@import '_mixins.scss';
+
+.login-modal {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white !important;
+  width: 22vw;
+  padding: 20px !important;
+  border-radius: 8px;
+}
+
+.cancel-btn {
+  color: $dark-bg;
+}
+
+
+.logout-img {
+  width: 50px !important;
+  margin-bottom: 0px !important;
+}
+
+
+.heading {
+  font-size: 14pt;
+  margin-top: 10px !important;
+}
+
+
+.logout-btn {
+  background-color: #c30f0f;
+  color: white !important;
+  border: 1px solid #c30f0f !important;
+  border-radius: 90px !important;
+  padding: 5px !important;
+  text-transform: capitalize !important;
+}
+
+.logout-btn>span {
+  vertical-align: middle !important;
+  font-size: 10pt !important;
+}
+
+.lo-cancel {
+  background: none;
+  color: $dark-bg;
+  border: 1px solid $dark-bg;
+  border-radius: 90px !important;
+  padding: 5px !important;
+
+  text-transform: capitalize !important;
+}

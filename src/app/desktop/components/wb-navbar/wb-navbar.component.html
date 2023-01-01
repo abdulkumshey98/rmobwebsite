@@ -28,9 +28,8 @@
       </li>
       <li class="uk-active"><a href="#">Sell Tablets</a></li>
       <li><a href="#">Sell Laptops</a></li>
-      <li><a href="#">Buy</a></li>
+      <li><a href="#">Buy Refurbed</a></li>
       <li><a href="">Become Our Partner</a></li>
-      <li><a href="#">Contact Us</a></li>
     </ul>
 
   </div>
@@ -45,16 +44,44 @@
       <a class="uk-button  navcity">Bangalore <img src="assets/fi/location.svg"
              alt=""> </a>
       <div class="uk-width-auto uk-padding-remove location-drop"
-           uk-dropdown="pos: bottom-center">
+           uk-dropdown="pos: bottom-center; mode : click;">
         <app-wb-location></app-wb-location>
       </div>
     </div>
-    <div class="uk-navbar-item">
+    <!-- <div class="uk-navbar-item">
       <a class="uk-button login-button "
          uk-toggle="target: #login-modal">Login</a>
+    </div> -->
+    <div class="uk-navbar-item">
+      <a class="uk-button login-button ">Login</a>
+      <div class="uk-width-auto uk-padding-remove profile-drop"
+           uk-dropdown="pos: bottom-right">
+        <ul class="uk-nav uk-dropdown-nav profile-nav">
+          <li><a href="#"> <span class="material-icons-outlined">
+                account_circle
+              </span> Edit Profile</a></li>
+          <li><a href="#"> <span class="material-icons-outlined">
+                shopping_basket
+              </span> Orders</a></li>
+          <li><a href="#"> <span class="material-icons-outlined">
+                credit_card
+              </span> Saved Payments</a></li>
+          <li><a href="#"><span class="material-icons-outlined">
+                share_location
+              </span> Saved Address</a></li>
+          <li><a href="#"><span class="material-icons-outlined">
+                storefront
+              </span> Partner Program</a></li>
+        </ul>
+        <a href=""
+           uk-toggle="target: #logout-modal"
+           class="uk-button logout-btn uk-width-1-1"><span class="material-icons-outlined">
+            logout
+          </span> Logout</a>
+      </div>
     </div>
   </div>
 </nav>
-
+<app-wb-logout></app-wb-logout>
 <app-wb-login></app-wb-login>
 <app-wb-otp></app-wb-otp>
