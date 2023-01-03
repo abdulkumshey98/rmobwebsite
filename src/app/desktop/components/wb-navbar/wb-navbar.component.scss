@@ -92,9 +92,46 @@
   font-size: 10pt !important;
 }
 
-
-
 .logout-btn:hover {
   background: none !important;
   color: #c30f0f !important;
+}
+
+
+.nav-category {
+  padding: 0px !important;
+}
+
+.nc-heading {
+  margin: 20px !important;
+  font-size: 11pt !important;
+  color: #92c640 !important;
+  margin-bottom: 0px !important;
+}
+
+.nav-category {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+
+.nav-category>ul>li>a {
+  margin: 2px 10px !important;
+  padding: 10px !important;
+  font-size: 10pt !important;
+  color: #003249 !important;
+}
+
+.nav-category>ul>li:first-child>a {
+  margin-top: 10px !important;
+}
+
+.nav-category>ul>li:last-child>a {
+  margin-bottom: 10px !important;
+}
+
+
+.nav-category>ul>li:hover>a {
+  background-color: #f1f1f1de;
+  border-radius: 4px !important;
 }

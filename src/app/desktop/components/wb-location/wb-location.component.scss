@@ -7,6 +7,7 @@
   border-radius: 8px !important;
   border: 1px solid $dark-bg;
   color: black !important;
+  padding: 5px !important;
 }
 
 
@@ -18,5 +19,40 @@
   color: $dark-bg;
   font-size: 10pt !important;
   font-weight: 500 !important;
+  margin-top: 0px !important;
   margin-bottom: 0px !important;
+}
+
+
+.location-list {
+  width: 400px !important;
+  padding: 20px !important;
+}
+
+
+.heading {
+  color: $dark-bg;
+  margin-bottom: 10px !important;
+}
+
+.location-grid {
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.location-grid.uk-active {
+  border: 1px solid $base-color;
+}
+
+
+.location-img {
+  width: 50px !important;
+}
+
+
+.location-name {
+  font-size: 10pt !important;
+  color: black !important;
+  margin-top: 4px !important;
 }
