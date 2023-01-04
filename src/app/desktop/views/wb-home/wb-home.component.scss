@@ -1,9 +1,11 @@
+@import '_mixins.scss';
+
 .home-img {
   width: 58vw !important;
 }
 
 .homesp-grid {
-  padding: 40px !important;
+  padding: 60px !important;
 }
 
 .hsp-heading {
@@ -20,5 +22,78 @@
 
 .hsp-search {
   height: 52px !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  color: black !important;
+  font-size: 10pt !important;
+  border-radius: 8px !important;
   border: 1px solid #f1f1f1 !important;
+}
+
+.tsp-close {
+  text-decoration: none !important;
+  color: red !important;
+  font-size: 14pt !important;
+}
+
+
+.tsp-close::before {
+  content: '\e5c9';
+  font-family: 'Material Icons';
+}
+
+
+.search-drop {
+  padding: 0px !important;
+  width: 470px !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
+
+.search-img {
+  width: 40px !important;
+}
+
+.search-table {
+  vertical-align: middle !important;
+  text-align: left !important;
+}
+
+
+.search-table>tbody>tr:hover>td {
+  color: $base-color;
+  cursor: pointer !important;
+}
+
+.product-img {
+  width: 40px !important;
+}
+
+.product-name {
+  font-size: 11pt !important;
+  color: black !important;
+}
+
+.pr-color {
+  color: $dark-bg;
+  width: 60% !important;
+  font-size: 11pt !important;
+}
+
+
+.hsp-img {
+  padding: 10px !important;
+  width: 100% !important;
+  border-radius: 8px !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+
+.more-br {
+  color: black !important;
+}
+
+.hsp-img.more {
+  display: flex !important;
+  align-items: center !important;
 }
