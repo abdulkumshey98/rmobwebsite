@@ -1,5 +1,6 @@
 <nav class="uk-navbar-container topnav"
-     uk-navbar>
+     uk-navbar
+     uk-sticky>
   <div class="uk-navbar-left">
     <a class="uk-navbar-item uk-logo"
        href="#"
@@ -11,7 +12,7 @@
 
     <ul class="uk-navbar-nav">
 
-      <li><a href="#">Home</a></li>
+      <li><a routerLink="/sell-old-mobile">Home</a></li>
       <li>
         <a href="#">Sell Mobile <span uk-navbar-parent-icon></span></a>
         <div class="uk-navbar-dropdown navdrop nav-category">
@@ -19,6 +20,8 @@
           <ul class="uk-nav uk-navbar-dropdown-nav">
             <li class="uk-active"><a href="#">Apple</a></li>
             <li><a href="#">MI</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a routerLink="/sell-old-mobile">More Brands</a></li>
           </ul>
         </div>
       </li>
@@ -26,6 +29,7 @@
       <li><a href="#">Sell Laptops</a></li>
       <li><a href="#">Buy Refurbed</a></li>
       <li><a href="">Become Our Partner</a></li>
+
     </ul>
 
   </div>

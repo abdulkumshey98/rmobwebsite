@@ -7,6 +7,8 @@ import { WbLoginComponent } from './components/wb-login/wb-login.component';
 import { WbOtpComponent } from './components/wb-otp/wb-otp.component';
 import { WbLocationComponent } from './components/wb-location/wb-location.component';
 import { WbLogoutComponent } from './components/wb-logout/wb-logout.component';
+import { WbMobileBrandsComponent } from './views/wb-mobile-brands/wb-mobile-brands.component';
+import { WbProductGridComponent } from './components/wb-product-grid/wb-product-grid.component';
 
 
 
@@ -17,6 +19,9 @@ const categoryRoutes = (component: any) => {
     },
      {
      path: '', component: WbHomeComponent
+     },
+      {
+     path: 'sell-old-mobile', component: WbMobileBrandsComponent
      },
     // {
     //   path: 'redeem', component: WbRedeemWalletComponent
@@ -78,62 +83,13 @@ const categoryRoutes = (component: any) => {
 }
 
 const desktopRoutes: Routes = [
-  {
-    path: '', component: WbHomeComponent, children: [
+
+     {
+     path: '', component: WbHomeComponent
+     },
       {
-        path: '', component: WbHomeComponent,
-        children: [
-          ...categoryRoutes(WbHomeComponent),
-        ]
-      },
-  //     {
-  //       path: 'ps', component: ProductCatalogueComponent,
-  //       children: categoryRoutes(ProductCatalogueComponent)
-  //     },
-  //     {
-  //       path: 'collections', component: ProductCatalogueComponent,
-  //       children:
-  //         [{
-  //           path: ':categoryKey', component: ProductCatalogueComponent,
-  //           children: [
-  //             {
-  //               path: '', component: ProductCatalogueComponent,
-  //               children: [
-  //                 {
-  //                   path: ':subCategoryKey', component: ProductCatalogueComponent,
-  //                   children: [
-  //                     {
-  //                       path: 'products', component: ProductCatalogueComponent
-  //                     },
-  //                     {
-  //                       path: ':groupKey', component: ProductCatalogueComponent
-  //                     },
-  //                     ...categoryRoutes(ProductCatalogueComponent)
-  //                   ]
-  //                 },
-  //                 ...categoryRoutes(ProductCatalogueComponent)
-  //               ]
-  //             },
-  //             ...categoryRoutes(ProductCatalogueComponent)
-  //           ]
-  //         },
-  //         ...categoryRoutes(ProductCatalogueComponent)
-  //         ]
-  //     },
-  //     {
-  //       path: 'offers', component: WbOffersComponent
-  //     },
-  //     {
-  //       path: 'profile', redirectTo: ''
-  //     }
-  //     // {
-  //     //   path: 'products', component: ProductsComponent,
-  //     // },
-  //     // {
-  //     //   path: 'products/details', component: ProductDetailsComponent
-  //     // },
-    ]
-  }
+     path: 'sell-old-mobile', component: WbMobileBrandsComponent
+     }
 ]
 
 @NgModule({
@@ -182,7 +138,9 @@ const desktopRoutes: Routes = [
     WbLoginComponent,
     WbOtpComponent,
     WbLocationComponent,
-    WbLogoutComponent
+    WbLogoutComponent,
+    WbMobileBrandsComponent,
+    WbProductGridComponent
   ],
   entryComponents: []
 })
