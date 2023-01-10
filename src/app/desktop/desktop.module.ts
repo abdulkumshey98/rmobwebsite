@@ -9,6 +9,9 @@ import { WbLocationComponent } from './components/wb-location/wb-location.compon
 import { WbLogoutComponent } from './components/wb-logout/wb-logout.component';
 import { WbMobileBrandsComponent } from './views/wb-mobile-brands/wb-mobile-brands.component';
 import { WbProductGridComponent } from './components/wb-product-grid/wb-product-grid.component';
+import { WbAllMobileComponent } from './views/wb-all-mobile/wb-all-mobile.component';
+import { WbSellVariantComponent } from './components/wb-sell-variant/wb-sell-variant.component';
+import { WbUsedPhoneComponent } from './views/wb-used-phone/wb-used-phone.component';
 
 
 
@@ -89,6 +92,11 @@ const desktopRoutes: Routes = [
      },
       {
      path: 'sell-old-mobile', component: WbMobileBrandsComponent
+     },
+      {
+     path: 'sell-apple', component: WbAllMobileComponent
+     },{
+     path: 'used-mobile', component: WbUsedPhoneComponent
      }
 ]
 
@@ -140,7 +148,10 @@ const desktopRoutes: Routes = [
     WbLocationComponent,
     WbLogoutComponent,
     WbMobileBrandsComponent,
-    WbProductGridComponent
+    WbProductGridComponent,
+    WbAllMobileComponent,
+    WbSellVariantComponent,
+    WbUsedPhoneComponent
   ],
   entryComponents: []
 })
