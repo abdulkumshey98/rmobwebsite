@@ -1,0 +1,49 @@
+ @import '_mixins';
+
+ .used-grid {
+   background-color: white !important;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   border-radius: 8px !important;
+ }
+
+
+ .brand-name {
+   font-size: 16pt !important;
+   font-weight: 500 !important;
+   margin-bottom: 0px !important;
+ }
+
+
+ .var-title {
+   font-size: 10pt !important;
+   color: black !important;
+   margin-top: 4px !important;
+ }
+
+ .variant-rad>label:first-child {
+   margin-left: 15px !important;
+ }
+
+
+ .variant-rad>label>input:checked {
+   background-color: $base-color;
+ }
+
+ .var-price {
+   font-size: 18pt !important;
+   font-weight: 500 !important;
+   color: $dark-bg;
+ }
+
+ .var-price>span {
+   color: $dark-bg;
+   font-family: 'Roboto', sans-serif !important;
+ }
+
+ .exact-val {
+   background-color: $dark-bg;
+   color: white !important;
+   padding: 4px 20px !important;
+   border-radius: 8px !important;
+   text-transform: capitalize !important;
+ }

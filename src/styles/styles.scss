@@ -36,3 +36,24 @@
    color: gray !important;
    font-size: 10pt !important;
  }
+
+
+ .variant-rad>label {
+   padding: 10px 20px !important;
+   background-color: #f1f1f1;
+   margin-right: 20px !important;
+   color: black !important;
+   cursor: pointer !important;
+   border-radius: 8px !important;
+   border: 1px solid gray !important;
+ }
+
+
+ .variant-rad>label>input {
+   margin-right: 10px !important;
+ }
+
+
+ .view-var {
+   padding-left: 0px !important;
+ }
