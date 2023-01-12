@@ -12,6 +12,8 @@ import { WbProductGridComponent } from './components/wb-product-grid/wb-product-
 import { WbAllMobileComponent } from './views/wb-all-mobile/wb-all-mobile.component';
 import { WbSellVariantComponent } from './components/wb-sell-variant/wb-sell-variant.component';
 import { WbUsedPhoneComponent } from './views/wb-used-phone/wb-used-phone.component';
+import { WbValuationComponent } from './components/wb-valuation/wb-valuation.component';
+import { WbStartQuestionComponent } from './components/wb-start-question/wb-start-question.component';
 
 
 
@@ -151,7 +153,9 @@ const desktopRoutes: Routes = [
     WbProductGridComponent,
     WbAllMobileComponent,
     WbSellVariantComponent,
-    WbUsedPhoneComponent
+    WbUsedPhoneComponent,
+    WbValuationComponent,
+    WbStartQuestionComponent
   ],
   entryComponents: []
 })
