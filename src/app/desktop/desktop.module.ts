@@ -14,6 +14,7 @@ import { WbSellVariantComponent } from './components/wb-sell-variant/wb-sell-var
 import { WbUsedPhoneComponent } from './views/wb-used-phone/wb-used-phone.component';
 import { WbValuationComponent } from './components/wb-valuation/wb-valuation.component';
 import { WbStartQuestionComponent } from './components/wb-start-question/wb-start-question.component';
+import { WbPricingComponent } from './views/wb-pricing/wb-pricing.component';
 
 
 
@@ -99,6 +100,9 @@ const desktopRoutes: Routes = [
      path: 'sell-apple', component: WbAllMobileComponent
      },{
      path: 'used-mobile', component: WbUsedPhoneComponent
+     },
+     {
+     path: 'device-evalution', component: WbPricingComponent
      }
 ]
 
@@ -155,7 +159,8 @@ const desktopRoutes: Routes = [
     WbSellVariantComponent,
     WbUsedPhoneComponent,
     WbValuationComponent,
-    WbStartQuestionComponent
+    WbStartQuestionComponent,
+    WbPricingComponent
   ],
   entryComponents: []
 })
