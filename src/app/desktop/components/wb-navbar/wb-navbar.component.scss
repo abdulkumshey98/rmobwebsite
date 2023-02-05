@@ -40,7 +40,7 @@
   background-color: #003249 !important;
   color: white !important;
   font-size: 10pt !important;
-  padding: 5px 40px !important;
+  padding: 4px 40px !important;
   border-radius: 46px !important;
 }
 
@@ -52,7 +52,7 @@
 
 
 .profile-drop {
-  padding: 20px !important;
+  padding: 10px !important;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
   border-radius: 8px !important;
 }
@@ -65,7 +65,13 @@
 
 .profile-nav>li>a {
   color: $dark-bg;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
 
+.profile-nav>li:hover>a {
+  background-color: #f1f1f1de !important;
+  color: #003249 !important;
 }
 
 .profile-nav>li>a>span {
@@ -74,10 +80,6 @@
   margin-right: 8px !important;
 }
 
-
-.profile-nav>li:hover>a {
-  color: $base-color;
-}
 
 
 .logout-btn {
