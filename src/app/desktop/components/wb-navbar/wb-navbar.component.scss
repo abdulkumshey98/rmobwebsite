@@ -37,11 +37,18 @@
 }
 
 .login-button {
-  background-color: #003249 !important;
-  color: white !important;
+  // background-color: #003249 !important;
+  color: #003249 !important;
   font-size: 10pt !important;
   padding: 4px 40px !important;
+  // border: 1px solid #003249 !important;
   border-radius: 46px !important;
+}
+
+.login-button>span {
+  vertical-align: middle !important;
+  font-size: 16pt !important;
+  margin-right: 8px !important;
 }
 
 .location-drop {

@@ -15,6 +15,7 @@ import { WbUsedPhoneComponent } from './views/wb-used-phone/wb-used-phone.compon
 import { WbValuationComponent } from './components/wb-valuation/wb-valuation.component';
 import { WbStartQuestionComponent } from './components/wb-start-question/wb-start-question.component';
 import { WbPricingComponent } from './views/wb-pricing/wb-pricing.component';
+import { WbEditProfileComponent } from './views/wb-edit-profile/wb-edit-profile.component';
 
 
 
@@ -29,6 +30,10 @@ const categoryRoutes = (component: any) => {
       {
      path: 'sell-old-mobile', component: WbMobileBrandsComponent
      },
+     {
+     path: 'edit-profile', component: WbEditProfileComponent
+     },
+
     // {
     //   path: 'redeem', component: WbRedeemWalletComponent
     // },
@@ -103,7 +108,11 @@ const desktopRoutes: Routes = [
      },
      {
      path: 'device-evalution', component: WbPricingComponent
-     }
+     },
+
+     {
+     path: 'edit-profile', component: WbEditProfileComponent
+     },
 ]
 
 @NgModule({
@@ -160,7 +169,8 @@ const desktopRoutes: Routes = [
     WbUsedPhoneComponent,
     WbValuationComponent,
     WbStartQuestionComponent,
-    WbPricingComponent
+    WbPricingComponent,
+    WbEditProfileComponent
   ],
   entryComponents: []
 })
