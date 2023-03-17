@@ -1,0 +1,15 @@
+ @import 'mixins';
+
+
+ .saved-header {
+   display: flex !important;
+   justify-content: space-between !important;
+ }
+
+
+ .add-btn {
+   background-color: $dark-bg;
+   padding: 6px 40px !important;
+   color: white !important;
+   border-radius: 16px !important;
+ }

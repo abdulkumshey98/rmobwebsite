@@ -62,3 +62,51 @@
  .variant-rad>label.checked {
    background-color: #f1f1f1 !important;
  }
+
+ .edit-container {
+   background: white;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 16px;
+   padding: 40px !important;
+ }
+
+ .main-container-v {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 24%, rgba(255, 255, 255, 1) 34%, rgba(17, 45, 61, 1) 34%, rgba(17, 45, 61, 1) 100%);
+   padding: 40px !important;
+   height: calc(100vh - 160px);
+   //  border-radius: 32px;
+ }
+
+
+ p.page-title {
+   color: white !important;
+   background-color: $dark-bg;
+   text-align: left !important;
+   padding: 10px;
+   margin-bottom: 10px;
+   font-size: 10pt !important;
+ }
+
+
+ .setting-heading {
+   font-size: 14pt !important;
+   margin-bottom: 4px !important;
+ }
+
+ .setting-subheading {
+   font-size: 11pt !important;
+   color: gray !important;
+   margin-top: 0px !important;
+ }
+
+
+ .pending-switch>li>a {
+   padding: 10px 30px !important;
+   color: black !important;
+   background-color: #dcdcdc !important;
+ }
+
+ .pending-switch>li.uk-active>a {
+   background-color: $base-color;
+   color: white !important;
+ }

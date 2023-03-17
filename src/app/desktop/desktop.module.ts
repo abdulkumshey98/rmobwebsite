@@ -16,6 +16,11 @@ import { WbValuationComponent } from './components/wb-valuation/wb-valuation.com
 import { WbStartQuestionComponent } from './components/wb-start-question/wb-start-question.component';
 import { WbPricingComponent } from './views/wb-pricing/wb-pricing.component';
 import { WbEditProfileComponent } from './views/wb-edit-profile/wb-edit-profile.component';
+import { WbYourOrdersComponent } from './views/wb-your-orders/wb-your-orders.component';
+import { WbSettingsNavComponent } from './components/wb-settings-nav/wb-settings-nav.component';
+import { WbSavedPaymentsComponent } from './views/wb-saved-payments/wb-saved-payments.component';
+import { WbSavedAddressComponent } from './views/wb-saved-address/wb-saved-address.component';
+import { WbAddNewAddressComponent } from './components/wb-add-new-address/wb-add-new-address.component';
 
 
 
@@ -111,7 +116,18 @@ const desktopRoutes: Routes = [
      },
 
      {
+     path: 'saved-payments', component: WbSavedPaymentsComponent
+     },
+
+      {
+     path: 'saved-address', component: WbSavedAddressComponent
+     },
+
+     {
      path: 'edit-profile', component: WbEditProfileComponent
+     },
+     {
+     path: 'your-orders', component: WbYourOrdersComponent
      },
 ]
 
@@ -170,7 +186,12 @@ const desktopRoutes: Routes = [
     WbValuationComponent,
     WbStartQuestionComponent,
     WbPricingComponent,
-    WbEditProfileComponent
+    WbEditProfileComponent,
+    WbYourOrdersComponent,
+    WbSettingsNavComponent,
+    WbSavedPaymentsComponent,
+    WbSavedAddressComponent,
+    WbAddNewAddressComponent
   ],
   entryComponents: []
 })

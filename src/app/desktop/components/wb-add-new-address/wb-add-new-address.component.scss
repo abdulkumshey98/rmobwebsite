@@ -1,0 +1,60 @@
+ @import 'mixins';
+
+
+ .uk-modal-body {
+   border-radius: 16px !important;
+ }
+
+ .modal-title {
+   text-align: center !important;
+   font-size: 14pt;
+   color: black !important;
+ }
+
+ .fetch-btn {
+   background-color: #f1f1f1;
+   padding: 8px !important;
+   color: black !important;
+   border-radius: 12px !important;
+   text-transform: capitalize !important;
+ }
+
+ .gps-img {
+   width: 20px !important;
+   margin-right: 10px !important;
+ }
+
+
+ .sub-btn {
+   background-color: $base-color;
+   color: white !important;
+   padding: 6px !important;
+   font-size: 12pt !important;
+   border-radius: 12px !important;
+   text-transform: capitalize !important;
+ }
+
+
+ input[type=text] {
+   height: 46px !important;
+   font-size: 10pt !important;
+   color: black !important;
+   border-radius: 4px !important;
+ }
+
+
+ input[type=text]::placeholder {
+   color: gray !important;
+ }
+
+ input[type=text]:focus {
+   border: 1px solid $base-color;
+ }
+
+
+ label {
+   font-size: 10pt !important;
+   display: inline-block !important;
+   margin-bottom: 10px !important;
+   color: black !important;
+ }

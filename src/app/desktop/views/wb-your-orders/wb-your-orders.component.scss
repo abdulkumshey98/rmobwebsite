@@ -1,0 +1,146 @@
+ @import 'mixins';
+
+
+ .card-details {
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 16px;
+ }
+
+
+ .cart-grid {
+   display: flex !important;
+   width: 100% !important;
+ }
+
+
+ .cart-img {
+   width: 80px !important;
+ }
+
+ .cart-date {
+   font-size: 10pt !important;
+   margin-bottom: 4px !important;
+   text-align: left !important;
+   font-size: 10pt !important;
+ }
+
+ .product-info {
+   display: flex !important;
+   width: 100% !important;
+   align-items: center;
+   justify-content: space-between !important;
+ }
+
+ .details {
+   display: flex !important;
+   align-items: center;
+ }
+
+
+ .product-name {
+   margin-top: 0px !important;
+   text-align: left !important;
+   font-size: 12pt;
+   color: black !important;
+   margin-top: 8px;
+   margin-bottom: 0px !important;
+   font-weight: 500;
+ }
+
+
+ .status {
+   padding: 20px 20px;
+ }
+
+ .continue {
+   background-color: #089a43;
+   padding: 20px 20px;
+   font-size: 10pt !important;
+ }
+
+
+ .price {
+   margin-top: 0px !important;
+   text-align: left;
+   margin-top: 6px;
+   font-size: 10pt;
+   color: gray;
+   font-weight: 600;
+   margin-bottom: 0px !important;
+ }
+
+ .price>span {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14pt;
+   color: black !important;
+ }
+
+
+ .price-hr {
+   border-top: 1px dotted gray !important;
+   margin-bottom: 10px !important;
+ }
+
+
+ .status-grid {
+   display: flex !important;
+ }
+
+
+ .pen-title {
+   margin-bottom: 0px !important;
+   color: black !important;
+   margin-left: 20px !important;
+   font-size: 10pt !important;
+ }
+
+ .pen-title.pending {
+   color: #f08914 !important;
+ }
+
+
+ //  resent otp  in line style sheet
+
+
+ .resend {
+   color: #16c416 !important;
+ }
+
+ .dm-info {
+   padding-bottom: 25px !important;
+ }
+
+
+ .log-heading {
+   text-align: center !important;
+ }
+
+
+ .sm-grid {
+   padding-bottom: 20px;
+ }
+
+ .nav-leadsnumber>li {
+   background: white;
+   border: 2px solid #8468E7;
+   padding: 6px 6px !important;
+   margin-top: 0px;
+   color: aliceblue;
+   border-radius: 90px;
+   margin-right: 10px;
+   width: 100% !important;
+   white-space: nowrap !important;
+ }
+
+ .nav-leadsnumber>li.uk-active {
+   background: #8468E7 !important;
+ }
+
+ .nav-leadsnumber>li>a {
+   color: #8468E7 !important;
+ }
+
+
+ .nav-leadsnumber>li.uk-active>a {
+   color: white !important;
+ }
