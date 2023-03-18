@@ -23,6 +23,8 @@ import { WbSavedAddressComponent } from './views/wb-saved-address/wb-saved-addre
 import { WbAddNewAddressComponent } from './components/wb-add-new-address/wb-add-new-address.component';
 import { WbBodyDefectsComponent } from './views/wb-body-defects/wb-body-defects.component';
 import { WbImageQuestionComponent } from './components/wb-image-question/wb-image-question.component';
+import { WbQuotePageComponent } from './views/wb-quote-page/wb-quote-page.component';
+import { WbQuotationComponent } from './components/wb-quotation/wb-quotation.component';
 
 
 
@@ -125,6 +127,10 @@ const desktopRoutes: Routes = [
      path: 'defects', component: WbBodyDefectsComponent
      },
 
+     {
+     path: 'quotes', component: WbQuotePageComponent
+     },
+
 
 
       {
@@ -201,7 +207,9 @@ const desktopRoutes: Routes = [
     WbSavedAddressComponent,
     WbAddNewAddressComponent,
     WbBodyDefectsComponent,
-    WbImageQuestionComponent
+    WbImageQuestionComponent,
+    WbQuotePageComponent,
+    WbQuotationComponent
   ],
   entryComponents: []
 })
