@@ -21,6 +21,8 @@ import { WbSettingsNavComponent } from './components/wb-settings-nav/wb-settings
 import { WbSavedPaymentsComponent } from './views/wb-saved-payments/wb-saved-payments.component';
 import { WbSavedAddressComponent } from './views/wb-saved-address/wb-saved-address.component';
 import { WbAddNewAddressComponent } from './components/wb-add-new-address/wb-add-new-address.component';
+import { WbBodyDefectsComponent } from './views/wb-body-defects/wb-body-defects.component';
+import { WbImageQuestionComponent } from './components/wb-image-question/wb-image-question.component';
 
 
 
@@ -119,6 +121,12 @@ const desktopRoutes: Routes = [
      path: 'saved-payments', component: WbSavedPaymentsComponent
      },
 
+     {
+     path: 'defects', component: WbBodyDefectsComponent
+     },
+
+
+
       {
      path: 'saved-address', component: WbSavedAddressComponent
      },
@@ -191,7 +199,9 @@ const desktopRoutes: Routes = [
     WbSettingsNavComponent,
     WbSavedPaymentsComponent,
     WbSavedAddressComponent,
-    WbAddNewAddressComponent
+    WbAddNewAddressComponent,
+    WbBodyDefectsComponent,
+    WbImageQuestionComponent
   ],
   entryComponents: []
 })
