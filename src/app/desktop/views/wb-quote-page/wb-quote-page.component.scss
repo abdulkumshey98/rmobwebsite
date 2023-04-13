@@ -1,1 +1,61 @@
 @import 'mixins';
+
+.question-container {
+  background-color: white !important;
+  border-radius: 16px !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.info-container {
+  display: flex !important;
+}
+
+
+.img-grid {
+  width: 40% !important;
+}
+
+
+.info-grid {
+  width: 100% !important;
+}
+
+
+.phone-name {
+  font-size: 18pt !important;
+  color: black !important;
+  text-align: left !important;
+  margin-bottom: 0px !important;
+
+}
+
+.price-title {
+  font-size: 12pt !important;
+  color: black !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+
+.price {
+  font-family: 'Roboto', sans-serif !important;
+  margin-top: 0px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+}
+
+
+.rep-btn {
+  background-color: $dark-bg;
+  color: white !important;
+  padding: 8px 30px !important;
+}
+
+
+.back-btn {
+  background: none !important;
+  text-transform: capitalize !important;
+  font-size: 10pt !important;
+  color: black !important;
+}

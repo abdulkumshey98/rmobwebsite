@@ -130,9 +130,6 @@ const desktopRoutes: Routes = [
      {
      path: 'quotes', component: WbQuotePageComponent
      },
-
-
-
       {
      path: 'saved-address', component: WbSavedAddressComponent
      },

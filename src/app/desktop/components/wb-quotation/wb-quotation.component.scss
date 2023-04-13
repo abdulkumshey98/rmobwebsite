@@ -1,0 +1,47 @@
+@import 'mixins';
+
+.price-heading {
+  font-size: 12pt !important;
+  color: black !important;
+  margin-bottom: 0px !important;
+  text-align: left !important;
+}
+
+.price-table>tbody>tr>td:first-child {
+  font-size: 10pt !important;
+}
+
+.price-table>tbody>tr>td {
+  width: 50% !important;
+  font-size: 10pt !important;
+
+  color: black !important;
+  font-size: 12pt !important;
+  padding: 10px 0px !important;
+}
+
+.price-table>tbody>tr>td:last-child {
+  text-align: right !important;
+}
+
+.ac-price {
+  color: black !important;
+}
+
+.free {
+  color: $base-color;
+}
+
+.pre-price {
+  text-decoration: line-through !important;
+  margin-left: 20px;
+}
+
+.pre-price>span {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+
+tr.coupon {
+  padding: 10px !important;
+}

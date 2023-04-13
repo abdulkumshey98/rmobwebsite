@@ -3,16 +3,18 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MbHomeComponent } from './components/mb-home/mb-home.component';
 import { NgOtpInputModule } from  'ng-otp-input';
+import { MbLoginComponent } from './views/mb-login/mb-login.component';
 
 
 const categoryRoutes = (component: any) => {
   return [
-    {
-      path: 'cart', component: component
-    },
-    {
-      path: 'wallets', component: MbHomeComponent
-    },
+
+      {
+     path: '', component: MbLoginComponent
+     },
+     {
+     path: '', component: MbLoginComponent
+     },
     // {
     //   path: 'redeem', component: WbRedeemWalletComponent
     // },
@@ -75,103 +77,11 @@ const categoryRoutes = (component: any) => {
 
 const mobileRoutes: Routes = [
   {
-    path: '', component: MbHomeComponent, data: { animation: 'MainPage' }, children: [
-      {
         path: '', component: MbHomeComponent
       },
-  //     {
-  //       path: 'default-splash', component: MbDefaultSplashComponent
-  //     },
-  //     {
-  //       path: 'my-addresses', component: MbAddressComponent,
-  //     },
-  //     {
-  //       path: 'address', component: MbAddressComponent
-  //     },
-  //     {
-  //       path: 'edit-address/:id', component: MbAddressComponent
-  //     },
-  //     {
-  //       path: 'product/:id', component: ProductDetailsComponent
-  //     },
-  //     {
-  //       path: 'wallet', component: MbMyWalletComponent
-  //     },
-  //     {
-  //       path: 'redeem-wallet', component: MbWalletRedeemComponent
-  //     },
-  //     {
-  //       path: 'login', component: MbLoginComponent
-  //     },
-  //     {
-  //       path: 'order-details', component: MbOrderDetailsComponent
-  //     },
-  //     {
-  //       path: 'my-orders', component: MbMyOrdersComponent
-  //     },
-  //     {
-  //       path: 'otp', component: MbOtpComponent
-  //     },
-  //     {
-  //       path: 'search', component: SearchViewComponent
-  //     },
-  //     {
-  //       path: 'search-result', component: SearchResultComponent
-  //     },
-  //     {
-  //       path: 'ps', component: SearchResultComponent,
-  //     },
-  //     {
-  //       path: 'collections', component: CategoriesComponent,
-  //       children:
-  //         [
-  //           {
-  //             path: ':categoryKey',
-  //             children: [
-  //               {
-  //                 path: '',
-  //                 children: [
-  //                   {
-  //                     path: ':subCategoryKey',
-  //                     children: [
-  //                       {
-  //                         path: 'products'
-  //                       },
-  //                       {
-  //                         path: ':groupKey'
-  //                       }
-  //                     ]
-  //                   }
-  //                 ]
-  //               }
-  //             ]
-  //           }
-  //         ]
-  //     },
-  //     {
-  //       path: 'view-story', component: MbStoryViewComponent
-  //     },
-  //     {
-  //       path: 'order-success', component: MbOrderSuccessComponent
-  //     },
-  //     {
-  //       path: 'place-order', component: MbPlaceOrdersComponent
-  //     },
-  //     {
-  //       path: 'cart', component: CartComponent,
-  //       canActivate: [RoleGuardService],
-  //       data: { roles: [Role.User] },
-  //     },
-  //     {
-  //       path: 'offers', component: OffersComponent
-  //     },
-  //     {
-  //       path: 'profile', component: ProfilesComponent,
-  //       canActivate: [RoleGuardService],
-  //       data: { roles: [Role.User] },
-  //     }
-    ]
-  }
+      {
+        path: 'login', component: MbLoginComponent
+      },
 ]
 
 @NgModule({
@@ -180,10 +90,9 @@ const mobileRoutes: Routes = [
     RouterModule.forChild(mobileRoutes)
   ],
   declarations: [
-    MbHomeComponent
+    MbHomeComponent,
+    MbLoginComponent
   ],
-  // declarations: [MobileHomeComponent, ProductListComponent, MobileLayoutComponent, CartComponent, ProfilesComponent,
-  //   ProductDetailsComponent, TopnavComponent, MbOfferStoriesComponent, MbFtProductsComponent, TitlebarComponent, MbSplashScreenComponent, MbDefaultSplashComponent, MbHomeNavbarComponent, MbHomeMainBannerComponent, CategoriesComponent, MbHomeCategoriesComponent, MbHomeOfferSliderComponent, MbHomeSliderBannerComponent, MbProductGridsComponent, MbProductVariantComponent, MbProductDetailsComponent, MbHeaderNavComponent, MbRelatedProductsComponent, MbHomeStoriesOffersComponent, MbStoryViewComponent, MbHomeBrandsComponent, MbCategoryDetailsComponent, MbPlaceOrdersComponent, MbOrderSuccessComponent, MbOfferViewComponent, SearchViewComponent, SearchResultComponent, MbLoginComponent, MbOtpComponent, MbMyOrdersComponent, MbOrderDetailsComponent, MbOrderTrackComponent, MbOrderCancelReasonComponent, MbMyWalletComponent, MbWalletRedeemComponent, MbRedeemRequestComponent, MbRedeemCancelComponent, MbRedeemDetailsComponent, MbAddressComponent, MbAddAddressComponent]
 })
 export class MobileModule {
 
