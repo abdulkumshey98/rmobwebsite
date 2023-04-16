@@ -4,15 +4,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { MbHomeComponent } from './components/mb-home/mb-home.component';
 import { NgOtpInputModule } from  'ng-otp-input';
 import { MbLoginComponent } from './views/mb-login/mb-login.component';
+import { MbSplashComponent } from './views/mb-splash/mb-splash.component';
+import { MbIntroComponent } from './views/mb-intro/mb-intro.component';
+import { MbDashboardComponent } from './views/mb-dashboard/mb-dashboard.component';
+import { MbBottomNavComponent } from './components/mb-bottom-nav/mb-bottom-nav.component';
 
 
 const categoryRoutes = (component: any) => {
   return [
 
       {
-     path: '', component: MbLoginComponent
-     },
-     {
      path: '', component: MbLoginComponent
      },
     // {
@@ -76,11 +77,12 @@ const categoryRoutes = (component: any) => {
 
 
 const mobileRoutes: Routes = [
-  {
-        path: '', component: MbHomeComponent
+
+      {
+        path: '', component: MbIntroComponent
       },
       {
-        path: 'login', component: MbLoginComponent
+        path: 'splash', component: MbSplashComponent
       },
 ]
 
@@ -91,7 +93,10 @@ const mobileRoutes: Routes = [
   ],
   declarations: [
     MbHomeComponent,
-    MbLoginComponent
+    MbSplashComponent,
+    MbIntroComponent,
+    MbDashboardComponent,
+    MbBottomNavComponent,
   ],
 })
 export class MobileModule {
