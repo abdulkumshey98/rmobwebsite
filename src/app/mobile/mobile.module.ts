@@ -8,6 +8,7 @@ import { MbSplashComponent } from './views/mb-splash/mb-splash.component';
 import { MbIntroComponent } from './views/mb-intro/mb-intro.component';
 import { MbDashboardComponent } from './views/mb-dashboard/mb-dashboard.component';
 import { MbBottomNavComponent } from './components/mb-bottom-nav/mb-bottom-nav.component';
+import { MbTopNavComponent } from './components/mb-top-nav/mb-top-nav.component';
 
 
 const categoryRoutes = (component: any) => {
@@ -84,6 +85,9 @@ const mobileRoutes: Routes = [
       {
         path: 'splash', component: MbSplashComponent
       },
+       {
+        path: 'home', component: MbDashboardComponent
+      },
 ]
 
 @NgModule({
@@ -97,6 +101,7 @@ const mobileRoutes: Routes = [
     MbIntroComponent,
     MbDashboardComponent,
     MbBottomNavComponent,
+    MbTopNavComponent,
   ],
 })
 export class MobileModule {
