@@ -136,3 +136,16 @@
  button {
    -webkit-tap-highlight-color: #8e0d0d00 !important;
  }
+
+
+ a:focus,
+ a,
+ li,
+ ul {
+   text-decoration: none !important;
+   color: black !important;
+   -webkit-tap-highlight-color: transparent;
+   /* for removing the highlight */
+
+
+ }

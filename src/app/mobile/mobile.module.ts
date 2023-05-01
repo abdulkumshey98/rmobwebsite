@@ -9,6 +9,9 @@ import { MbIntroComponent } from './views/mb-intro/mb-intro.component';
 import { MbDashboardComponent } from './views/mb-dashboard/mb-dashboard.component';
 import { MbBottomNavComponent } from './components/mb-bottom-nav/mb-bottom-nav.component';
 import { MbTopNavComponent } from './components/mb-top-nav/mb-top-nav.component';
+import { MbHomeSliderComponent } from './components/mb-home-slider/mb-home-slider.component';
+import { MbLocationComponent } from './components/mb-location/mb-location.component';
+import { MbSearchProductsComponent } from './views/mb-search-products/mb-search-products.component';
 
 
 const categoryRoutes = (component: any) => {
@@ -102,6 +105,9 @@ const mobileRoutes: Routes = [
     MbDashboardComponent,
     MbBottomNavComponent,
     MbTopNavComponent,
+    MbHomeSliderComponent,
+    MbLocationComponent,
+    MbSearchProductsComponent,
   ],
 })
 export class MobileModule {

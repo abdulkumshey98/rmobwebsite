@@ -1,17 +1,47 @@
-<nav class="bg-red-300 px-4 py-6 ">
+<nav class=" px-4 py-4 flex justify-between items-center">
   <div>
     <ul>
       <li>
-        <a class="flex"
-           href=""><img class="w-[20px]"
+        <a href="#location-modal"
+           class="flex items-center"
+           uk-toggle><img class="w-[20px]"
                src="assets/fi/location.svg"
                alt="">
-          <span class="ml-2">Bangalore</span>
+          <p class="ml-4">
+            <span class="text-[10px] leading-1">Select your city</span> <br>
+            <span class="text-[16px] leading-[-200px]">Bangalore</span>
+          </p>
         </a>
       </li>
     </ul>
   </div>
   <div>
-
+    <ul class="flex gap-x-4">
+      <li><a href="">
+          <svg class="w-6 h-6 text-black"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.5"
+               viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg"
+               aria-hidden="true">
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+          </svg>
+        </a></li>
+      <li><a href="">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="currentColor"
+               class="w-7 h-7 text-black">
+            <path fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                  clip-rule="evenodd" />
+          </svg>
+        </a></li>
+    </ul>
   </div>
 </nav>
+
+<app-mb-location></app-mb-location>

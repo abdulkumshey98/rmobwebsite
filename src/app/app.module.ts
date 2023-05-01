@@ -5,6 +5,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgIconsModule } from '@ng-icons/core';
+import { featherAirplay } from '@ng-icons/feather-icons';
+import { heroUsers } from '@ng-icons/heroicons/outline';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,6 +17,8 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
   imports: [
     BrowserAnimationsModule,
     AppRoutingModule,
+        NgIconsModule.withIcons({ featherAirplay }),
+
 
   ],
   providers: [
