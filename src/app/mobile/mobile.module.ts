@@ -91,6 +91,9 @@ const mobileRoutes: Routes = [
        {
         path: 'home', component: MbDashboardComponent
       },
+      {
+        path: 'search', component: MbSearchProductsComponent
+      },
 ]
 
 @NgModule({
